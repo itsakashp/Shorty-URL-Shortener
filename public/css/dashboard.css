@@ -1,0 +1,109 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.table-container h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+h2.greeting {
+  margin-top: 1rem;
+}
+
+.greeting {
+  text-align: center;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  overflow: hidden;
+  background: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  border-radius: 5px;
+}
+
+table a {
+  color: #fff;
+}
+
+th,
+td {
+  padding: 15px;
+  color: #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  background-color: #454e56;
+  color: #b2becd;
+}
+
+tbody tr:hover {
+  background-color: rgba(178, 190, 205, 0.5);
+}
+
+tbody td.expired {
+  opacity: 0.5;
+  position: relative;
+}
+
+tbody td.expired-banner::before {
+  content: "expired";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transform: rotate(-15deg);
+  background: #dc0530;
+  padding: 0.3em 0.5em;
+  border-radius: 3px;
+}
+
+.delete {
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.2em 0.4em;
+  color: #fff;
+  background: #bc1142;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.url-doesnt-exist {
+  display: block;
+  background: #dc0530;
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3em 0.5em;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  margin: 0 auto 10px;
+}
+
+.copy {
+  cursor: pointer;
+}
+
+.copy-directions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.copied {
+  text-align: center;
+}
+
+@media only screen and (max-width: 43.75em) {
+  /* 700px */
+  h2.greeting {
+    font-size: 2.2rem;
+  }
+}
